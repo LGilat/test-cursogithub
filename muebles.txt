@@ -1,3 +1,6 @@
 sillas
 mesas
 sofas
+escritorios
+estanterias
+
