@@ -5,9 +5,9 @@ Comprobando la gestión de las **ultimas** tareas realizadas
 Siguiente cuestión _escribir una frase completamente en italic_  
 #
 ### una lista marca coches
-. Alfa Romeo
-. Alpine
-. ASton Martin
+* Alfa Romeo
+* Alpine
+* ASton Martin
 * Audi
 * Bentley 
 * Ford Fiesta
