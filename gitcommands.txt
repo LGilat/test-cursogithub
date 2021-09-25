@@ -1,0 +1,92 @@
+#inicio
+git init #para crear proyecto
+
+git status # como se encuentra el repositorio.  La rama mastger -intial commit  se encuentra vacio.
+
+git add index.html #para añadirlo al stage para comitear después.
+
+git commit #ejecuta los cambios antes te exije configurar git config 
+
+git config user.name "Luis Oculto"
+git config user.email "you@example.com"
+
+git log # para ver los log
+git diff # para ver la diferencia entre el último commit y lo modificado que todavía no está en el stage
+git commit --amend #para volver a hacer el commit e incluir los últimos cambios que no habían sido añadidos. 
+
+git checkout -- archivo.extension #para rehacer los cambios del archivo modificado y guardado
+git reset HEAD index.html #saca del stage local la modificación último (HEAD indica la rama master,HEAD se sustituye por la rama en la que se encuentra)
+git reset --hard # resetado duro, elimina los cambios locales y stage 
+gil log --oneline #para ver el id del commit y los nombres en una linea
+
+git diff 943849 b39434 #compara y saca la diferencia entre commits
+git diff HEAD~1 # (~ significa anterior) 1 el numero del salto. 
+
+# RAMAS #
+-crear rama
+git branch <nombre-rama>
+
+-- VER RAMAS DISPONIBLES
+git branch
+
+-- cambiar de rama 
+git checkout <nombre-rama>
+
+-- fusionar una rama 
+git merge <nombre_rama_a_fusionar>
+
+-- eliminar una rama 
+git branch -d <nombre_rama>
+
+################################################################
+#	        REMOTOS 
+################################################################
+--CLONAR UN REPOSITORIO 
+git clone <url-repositorio>
+
+--conectar y hacer una copia del repositorio
+git clone https://github.com//schacon/ticgit 
+
+--VER REMOSTOS
+git remote -v 
+
+--Anadir, eliminar y renombrar remotos
+git remote add <nombre_remoto> <url_repositorio>
+git remote rm <nombre_remoto>
+git remote rename <nombre_original> <nombre_nuevo>
+
+--Traer información del remoto
+git pull [nombre_remoto] [nombre_rama]
+
+--enviar cambios al remoto
+git push [nombre_remoto] [nombre_rama] 
+
+--enviar cambios de una rama al remoto y crear una rama asociada
+git push -u nombre_remoto [nombre_rama] 
+####################################################################
+
+--crear la rama y cambiar automaticamente
+git checkout -b <iss53>
+
+--cambiar rama principal y unir
+git checkout master
+git merge hotfix 
+
+
+--conectar y hacer una copia del repositorio
+git clone https://github.com//schacon/ticgit 
+
+Now cache the given record in your computer to remembers the token:
+
+$ git config --global credential.helper cache
+
+#If needed, anytime you can delete the cache record by:
+
+$ git config --global --unset credential.helper
+$ git config --system --unset credential.helper
+
+
+
+
+
+
