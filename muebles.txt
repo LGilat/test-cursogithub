@@ -7,3 +7,4 @@ cocinas
 lavavajillas 
 Mesa Escritorio
 Estanterías
+Armarios
