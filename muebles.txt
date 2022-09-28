@@ -5,4 +5,5 @@ camas
 neveras
 cocinas
 lavavajillas 
-
+Mesa Escritorio
+Estanterías
